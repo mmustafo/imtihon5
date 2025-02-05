@@ -5,8 +5,8 @@
 // let n = 5;  
 // let son = 3
 // let result = [];  
-// for (let i = 0; i < n; i++) {
-//     result.push(son ** (i + 1));
+// for (let i = 1; i <= n; i++) {
+//     result.push(son ** i);
 // }
 // console.log(result);
 
@@ -33,8 +33,8 @@
 // const arr = [4, 5, 7, 8, 6, 9]
 // const arrp = []
 // for (let i=0; i<=arr.length; i++){
-//      if (arr[i] % 2 == 1) {
-//           arrp.push(arr[i]);
+//      if (arr.indexOf(arr[i]) % 2 == 1) {
+//           arrp.unshift(arr[i]);
 //       }
 // }
 // console.log(arrp);
@@ -124,9 +124,9 @@
 // let arrkatta = []
 // let arrkichik = []
 // for (let i=0; i<arr.length; i++){
-//      if(arr[i]>5){
+//      if(arr[i]>=arr.length){
 //           arrkatta.push(arr[i])
-//      } else if (arr[i]<5){
+//      } else{
 //           arrkichik.push(arr[i])
 //      }
 // }
@@ -149,8 +149,8 @@
 // Massivning oxiridan boshlab har bir ikkinchi elementni chiqaruvchi programma tuzing.
 // 📥 Input: [4, 5, 7, 8, 6, 9, 10, 15]
 //  📤 Output: [15, 9, 8, 5]
-// function oralab(arr) {
-//      return arr.reverse().filter((_, index) => index % 2 === 0);
-//  }
-//  let arr = [4, 5, 7, 8, 6, 9, 10, 15]
-//  console.log(oralab(arr));
+function oralab(arr) {
+     return arr.reverse().filter((_, index) => index % 2 === 0);
+ }
+ let arr = [4, 5, 7, 8, 6, 9, 10, 15]
+ console.log(oralab(arr));
